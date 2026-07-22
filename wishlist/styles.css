@@ -4,6 +4,11 @@ body {
     margin: 0; 
 
 }
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
 
 header {
     background-color: #ffffff;
@@ -66,4 +71,36 @@ header {
     align-items: center;
     justify-content: center;
 
+}
+.wishlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.wishlist-info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+.wishlist-info p { 
+    font-size: 15px;
+    color: #6b7280;
+    margin-top: 8px ;
+}
+.wishlist-tabs {
+    display: flex; 
+    gap: 10px;
+}
+.wishlist-tabs button{ 
+    padding: 8px 20px;
+    border: ;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+div p b {
+    font-weight: 700;
+    color:black
 }
