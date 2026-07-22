@@ -27,7 +27,6 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 20px;
     display: flex;
     gap: 32px;
 }
@@ -36,4 +35,32 @@ header {
     color: #6b7280;
     font-size: 16px;
     font-weight: 500;
+}
+.nav-items a:hover{
+    color: black;
+}
+
+.actions {
+    margin-left: auto;
+    display: flex; 
+    align-items: center;
+    gap: 16px; 
+}
+
+.actions input { 
+    width: 240px;
+    padding: 10px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.actions form button { 
+    width: ;
+    height: ;
+    border-radius: ;
+    background: ;
+    color: ;
+    border: ;
+
 }
