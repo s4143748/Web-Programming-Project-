@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SGS-G3 - Administration</title>
+<link rel="stylesheet" href="styleminh.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header class="nav">
+        <a class="brand" href="homepage.html">SGS-G3</a>
+        <nav class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart&checkout.html">Cart</a>
+        </nav>
+
+        <input class="nav-search" type="search" placeholder="Search">
+        <a class="avatar" href="profile.html" title="Profile"></a>
+    </header>
+
+    <main class="page">
+        <h1 class="page-title">Administration</h1>
+
+        <section class="card table-card">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>user1</td>
+                        <td>user1@gmail.com</td>
+                        <td>admin</td>
+                        <td><span class="status status-active"><span class="dot"></span>active</span></td>
+                        <td><button class="btn">Lock</button></td>
+                    </tr>
+                    <tr>
+                        <td>user2</td>
+                        <td>user2@gmail.com</td>
+                        <td>user</td>
+                        <td><span class="status status-active"><span class="dot"></span>active</span></td>
+                        <td><button class="btn">Lock</button></td>
+                    </tr>
+                    <tr>
+                        <td>user3</td>
+                        <td>user3@gmail.com</td>
+                        <td>user</td>
+                        <td><span class="status status-locked"><span class="dot"></span>Locked</span></td>
+                        <td><button class="btn btn-primary">Unlock</button></td>
+                    </tr>
+                    <tr>
+                        <td>user4</td>
+                        <td>user4@gmail.com</td>
+                        <td>user</td>
+                        <td><span class="status status-active"><span class="dot"></span>active</span></td>
+                        <td><button class="btn">Lock</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
