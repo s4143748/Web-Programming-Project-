@@ -49,6 +49,7 @@ h1{font-size:28px;font-weight:600;letter-spacing:-.6px}
 }
 a.ph:hover{text-decoration:none;border-color:#c7c7cc;color:#86868b}
 .poster{width:160px;height:240px;flex:none}
+.poster img{width:100%;height:100%;object-fit:cover;border-radius:14px;display:block}
 .poster-row{display:flex;gap:14px;overflow-x:auto;padding:4px}
 
 .btn{
@@ -61,7 +62,7 @@ a.ph:hover{text-decoration:none;border-color:#c7c7cc;color:#86868b}
 .btn.secondary:hover{background:#fff;border-color:#86868b}
 
 .hero{position:relative;height:420px}
-.hero .hero-bg{position:absolute;inset:0;border-radius:0;border:none;border-bottom:1px solid #e8e8ed}
+.hero .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:0;border:none;border-bottom:1px solid #e8e8ed}
 .hero-panel{
   position:absolute;left:max(32px,calc((100% - 1040px) / 2 + 32px));bottom:28px;width:260px;
   background:#fff;border:1px solid #e3e3e8;box-shadow:0 8px 24px rgba(0,0,0,.08);
