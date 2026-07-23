@@ -51,6 +51,7 @@
     </header>
 
     <main>
+
         <section class="wishlist-header">
             <div class="wishlist-info">
                 <h1>My Wishlist</h1>
@@ -60,15 +61,57 @@
                 <button class="active"> Saved for later</button>
                 <button> Purchased </button>
             </div>
+        </section >
+            
+
+        <section class="filter-bar">
+            <div class="filter-group">
+
+                <span>Filter</span>
+                <button class="active">All</button>
+                <button>Movies </button>
+                <button>Series </button>
+                <label><input type="checkbox"> Hide Watched </label>
+                        
+            </div>
+
+            <div class="sort-group">
+                <label for="sort">Sort</label>
+                <select id="sort"> 
+                    <option> Recently added </option>
+                    <option> Highest Rated </option>
+                    <option> Price: High to Low  </option>
+                    <option> Price: Low to High </option>
+                    <option> A-Z </option>
+                </select>
+            </div>
+
         </section>
 
-        <section>
+        <section class="movie-grid">
+            <article class="movie-card">
+                <div class="poster"> 
+
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
         </section>
 
-        <section>
-        </section>
-
-        <section>
+        <section class="pagination">
         </section>
 
     </main>
