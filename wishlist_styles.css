@@ -20,6 +20,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     height: 100%; 
+    gap: 40px;
 }
 .logo {
     font-size: 24px;
@@ -199,10 +200,20 @@ header {
     display: flex; 
     justify-content: center;
     align-items: center;
+    position: relative; 
+}
+
+.poster img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .movie-info {
     padding: 16px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
 }
 
 .title-row {
@@ -228,4 +239,67 @@ header {
     font-size: 16px;
     font-weight: 700; 
     color: #111827
+}
+
+.movie-meta {
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px; 
+    color: #6b7280;
+    margin-top: 8px; 
+}
+
+.overlay { 
+    position: absolute; 
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    gap: 8px;
+    pointer-events: none;
+}
+
+.movie-card:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+.overlay button {
+    cursor: pointer;
+    padding: 8px 12px; 
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.15);
+    color: white; 
+    transition: all 0.2s ease;
+
+}
+
+.overlay button:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.overlay .remove-btn {
+    background-color: rgba(239,68,68,0.8);
+}
+.overlay .cart-btn {
+    background-color: white;
+    color: black; 
+}
+
+.overlay .detail-btn{ 
+
+}
+
+.overlay .mark-btn { 
+    background-color: rgba(34,197,94,0.8);
 }
