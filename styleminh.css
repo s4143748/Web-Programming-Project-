@@ -79,3 +79,30 @@ a.ph:hover{text-decoration:none;border-color:#c7c7cc;color:#86868b}
   font-size:15px;color:#1d1d1f;
 }
 .wishlist-btn:hover{border-color:#86868b;text-decoration:none}
+
+.grow{flex:1}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+
+.btn.small{padding:5px 12px;font-size:12px;border-radius:8px}
+
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:12px;font-weight:500;color:#6e6e73}
+.input{
+  border:1px solid #d2d2d7;border-radius:10px;background:#fff;
+  padding:9px 12px;font-size:13px;font-family:inherit;color:#1d1d1f;width:100%;
+}
+.input:focus{outline:none;border-color:#86868b;box-shadow:0 0 0 3px rgba(0,0,0,.06)}
+select.input{width:auto}
+
+.card{background:#fff;border:1px solid #e8e8ed;border-radius:18px;padding:24px}
+.card .section-title{font-size:17px}
+
+.card.row{gap:16px;padding:16px}
+.card.row .ph{width:64px;height:92px;flex:none;border-radius:8px}
+.card.row .stack{gap:6px}
+.card.row select.input{padding:4px 8px;font-size:12px}
+.item-price{width:90px;text-align:right;font-weight:500}
+
+.row.align-end{align-items:flex-end}
+.field-expiry{width:100px}
+.field-cvc{width:80px}
