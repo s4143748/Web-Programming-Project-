@@ -21,6 +21,7 @@ header {
     align-items: center;
     height: 100%; 
     gap: 40px;
+    padding: 0 32px;
 }
 .logo {
     font-size: 24px;
@@ -88,9 +89,14 @@ header {
     font-size: 15px;
     color: #6b7280;
     margin-top: 8px ;
+    width: fit-content; 
 }
 .wishlist-tabs {
     display: flex; 
+    align-items: center;
+    background-color: #eef0f3;
+    padding: 6px;
+    border-radius: 16px;
     gap: 10px;
 }
 .wishlist-tabs button{ 
@@ -100,7 +106,7 @@ header {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    background-color: rgb(222, 220, 220);
+    background-color: #eef0f3; 
     color: black;
 }
 .wishlist-tabs .active {
@@ -180,12 +186,28 @@ header {
 
 .movie-grid { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px; 
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px; 
     margin-top: 32px;
-
 }
+/*large tablet*/
+@media (max-width: 1200px) {
+    .movie-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*medium tablet*/
+@media (max-width: 900px) {
 
+    .movie-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .movie-card {
     background-color: white;
     border: 1px solid #f3f4f6; 
@@ -297,9 +319,74 @@ header {
 }
 
 .overlay .detail-btn{ 
-
+    background-color: transparent;
 }
 
 .overlay .mark-btn { 
     background-color: rgba(34,197,94,0.8);
+}
+
+.pagination {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    margin-top: 40px; 
+}
+
+.page-btn, .page-num { 
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.page-num.active { 
+    background-color: black;
+    color: white;
+    border-color: #000; 
+}
+
+.page-num:hover, .page-btn:hover{
+    background-color: #f3f4f6;
+    border-color: #d1d5db; 
+    
+}
+.page-num.active:hover {
+    background-color: black;
+    color: white;
+}
+.dots { 
+    padding: 0 8px; 
+    color: #9ca3af; 
+    font-size: 14px; 
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none; 
+    }
+    .action input { 
+        width: 150px; 
+    }
+}
+
+.watched-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    padding: 4px 8px; 
+    background-color:#22c55e;
+    color:white;
+    border-radius: 999px;
+    font-size: 12px; 
+    font-weight: 600;
+
+}
+.avt-btn {
+    cursor: pointer; 
 }
