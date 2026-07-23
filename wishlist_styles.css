@@ -313,17 +313,40 @@ header {
 .overlay .remove-btn {
     background-color: rgba(239,68,68,0.8);
 }
+
+.overlay .remove-btn:hover {
+    background-color: #dc2626;
+}
 .overlay .cart-btn {
     background-color: white;
-    color: black; 
+    color: #111827;
 }
 
-.overlay .detail-btn{ 
-    background-color: transparent;
+.overlay .cart-btn:hover {
+    background-color: #c2c3c5;
 }
 
-.overlay .mark-btn { 
-    background-color: rgba(34,197,94,0.8);
+
+.overlay .detail-btn {
+    background-color: rgba(255,255,255,0.15);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+.overlay .detail-btn:hover {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+    border-color: white;
+}
+
+.overlay .mark-btn {
+    background-color: rgba(34,197,94,0.85);
+}
+
+.overlay .mark-btn:hover {
+    background-color: #16a34a;
 }
 
 .pagination {
@@ -389,4 +412,35 @@ header {
 }
 .avt-btn {
     cursor: pointer; 
+}
+
+.nav-items a {
+    position: relative;
+    text-decoration: none;
+    color: #667085;
+    font-weight: 600;
+}
+.nav-items a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 100%;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background-color: #111827;
+    border-radius: 999px;
+}
+.nav-items .active { 
+    color: black; 
+    font-weight: 700;
+}
+.wishlist-tabs button:not(.active):hover {
+    background-color: #e3e4e8;
+    color: #111827;
 }
