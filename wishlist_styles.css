@@ -1,0 +1,446 @@
+body {
+    background-color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0; 
+
+}
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+header {
+    background-color: #ffffff;
+    height: 72px;
+    border-bottom: 1px solid #e5e7eb; 
+}
+.header-container {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%; 
+    gap: 40px;
+    padding: 0 32px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+}
+.nav-items a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-items a:hover{
+    color: black;
+}
+
+.actions {
+    margin-left: auto;
+    display: flex; 
+    align-items: center;
+    gap: 16px; 
+}
+
+.actions input { 
+    width: 240px;
+    padding: 10px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.avt-btn{ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #111827;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wishlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.wishlist-info h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+.wishlist-info p { 
+    font-size: 15px;
+    color: #6b7280;
+    margin-top: 8px ;
+    width: fit-content; 
+}
+.wishlist-tabs {
+    display: flex; 
+    align-items: center;
+    background-color: #eef0f3;
+    padding: 6px;
+    border-radius: 16px;
+    gap: 10px;
+}
+.wishlist-tabs button{ 
+    padding: 8px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #eef0f3; 
+    color: black;
+}
+.wishlist-tabs .active {
+    background-color: white;
+    color: black;
+    border: 1px solid white; 
+}
+
+.wishlist-info b {
+    font-weight: 700;
+    color:black
+}
+
+.filter-group button {
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600; 
+    border-radius: 999px;
+    cursor: pointer;
+    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    color: #374151;
+    transition: all 0.2s ease;
+}
+
+.filter-group .active {
+    background-color: #111827; 
+    color: white; 
+    border: 1px solid black;
+}
+.filter-group button:hover{
+    background-color: #f3f4f6;
+}
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    margin-top: 32px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+.filter-group {
+    display: flex; 
+    align-items: center;
+    gap: 9px; 
+}
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    gap:5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.sort-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-group select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter-group span, .sort-group label { 
+    font-size: 14px; 
+    font-weight: 600;
+    color: #374151;
+}
+
+.movie-grid { 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px; 
+    margin-top: 32px;
+}
+/*large tablet*/
+@media (max-width: 1200px) {
+    .movie-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*medium tablet*/
+@media (max-width: 900px) {
+
+    .movie-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.movie-card {
+    background-color: white;
+    border: 1px solid #f3f4f6; 
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.poster { 
+    aspect-ratio: 2/3;
+    background-color: #e5e7eb;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.poster img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.movie-info {
+    padding: 16px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-row h3 { 
+    font-weight: 700;
+    font-size: 16px; 
+    margin: 0;
+}
+
+.movie-info p { 
+    font-size: 13px;
+    color: #6b7280;
+    margin: 8px 0;
+
+}
+
+.title-row span { 
+    font-size: 16px;
+    font-weight: 700; 
+    color: #111827
+}
+
+.movie-meta {
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px; 
+    color: #6b7280;
+    margin-top: 8px; 
+}
+
+.overlay { 
+    position: absolute; 
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    gap: 8px;
+    pointer-events: none;
+}
+
+.movie-card:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+.overlay button {
+    cursor: pointer;
+    padding: 8px 12px; 
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.15);
+    color: white; 
+    transition: all 0.2s ease;
+
+}
+
+.overlay button:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.overlay .remove-btn {
+    background-color: rgba(239,68,68,0.8);
+}
+
+.overlay .remove-btn:hover {
+    background-color: #dc2626;
+}
+.overlay .cart-btn {
+    background-color: white;
+    color: #111827;
+}
+
+.overlay .cart-btn:hover {
+    background-color: #c2c3c5;
+}
+
+
+.overlay .detail-btn {
+    background-color: rgba(255,255,255,0.15);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+.overlay .detail-btn:hover {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+    border-color: white;
+}
+
+.overlay .mark-btn {
+    background-color: rgba(34,197,94,0.85);
+}
+
+.overlay .mark-btn:hover {
+    background-color: #16a34a;
+}
+
+.pagination {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    margin-top: 40px; 
+}
+
+.page-btn, .page-num { 
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.page-num.active { 
+    background-color: black;
+    color: white;
+    border-color: #000; 
+}
+
+.page-num:hover, .page-btn:hover{
+    background-color: #f3f4f6;
+    border-color: #d1d5db; 
+    
+}
+.page-num.active:hover {
+    background-color: black;
+    color: white;
+}
+.dots { 
+    padding: 0 8px; 
+    color: #9ca3af; 
+    font-size: 14px; 
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        display: none; 
+    }
+    .action input { 
+        width: 150px; 
+    }
+}
+
+.watched-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    padding: 4px 8px; 
+    background-color:#22c55e;
+    color:white;
+    border-radius: 999px;
+    font-size: 12px; 
+    font-weight: 600;
+
+}
+.avt-btn {
+    cursor: pointer; 
+}
+
+.nav-items a {
+    position: relative;
+    text-decoration: none;
+    color: #667085;
+    font-weight: 600;
+}
+.nav-items a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 100%;
+    height: 3px;
+
+    transform: translateX(-50%);
+
+    background-color: #111827;
+    border-radius: 999px;
+}
+.nav-items .active { 
+    color: black; 
+    font-weight: 700;
+}
+.wishlist-tabs button:not(.active):hover {
+    background-color: #e3e4e8;
+    color: #111827;
+}

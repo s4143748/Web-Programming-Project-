@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Wishlist </title>
+<link rel="stylesheet" href="wishlist_styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a class ="logo" href="#"> SGS - G3 </a>
+
+            <nav>
+                <ul class="nav-items">
+                    <li>
+                        <a href="#">Browse</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Reviews</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class='active'>Wishlist</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Cart</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                    <form> 
+                        <input type="search" placeholder="Search movies...">
+                    </form>
+
+                    <button class="avt-btn"> AVT </button>
+
+                    
+
+                </div>
+        </div>
+
+        
+    </header>
+
+    <main>
+
+        <section class="wishlist-header">
+            <div class="wishlist-info">
+                <h1>My Wishlist</h1>
+                <p> You have <b>24 movies</b> saved and <b>4 purchased</b>. </p>
+            </div>
+            <div class="wishlist-tabs">
+                <button class="active"> Saved for later</button>
+                <button> Purchased </button>
+            </div>
+        </section >
+            
+
+        <section class="filter-bar">
+            <div class="filter-group">
+
+                <span>Filter</span>
+                <button class="active">All</button>
+                <button>Movies </button>
+                <button>Series </button>
+                <label><input type="checkbox"> Hide Watched </label>
+                        
+            </div>
+
+            <div class="sort-group">
+                <label for="sort">Sort</label>
+                <select id="sort"> 
+                    <option> Recently added </option>
+                    <option> Highest Rated </option>
+                    <option> Price: High to Low  </option>
+                    <option> Price: Low to High </option>
+                    <option> A-Z </option>
+                </select>
+            </div>
+
+        </section>
+
+        <section class="movie-grid">
+            <article class="movie-card">
+                <div class="poster"> 
+                    <div class="watched-badge"> ✓ Watched </div>
+
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster"> 
+                    <img src="images/inception.jpg" alt="inception-poster">
+
+                    <div class="overlay"> 
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn"> Mark as watched</button>
+                        <button class="cart-btn">Add to cart</button>
+                        <button class="detail-btn">Details</button>
+                        
+                    </div>
+                </div>
+                <div class="movie-info"> 
+                    <div class="title-row">
+                        <h3> Inception</h3>
+                        <span>$12</span>
+                    </div>
+                    
+                    <p> Sci-Fi • 2010</p>
+
+                    <div class="movie-meta"> 
+                        <span>Users: 24k</span>
+                        
+                        <span>Rating: 4.8</span>
+
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="pagination">
+            <button class="page-btn">←</button>
+            <button class="page-num active">1</button>
+            <button class="page-num">2</button>
+            <button class="page-num">3</button>
+            <span class="dots">...</span>
+
+
+
+            <button class="page-num">10</button>
+            <button class="page-btn">→</button>
+
+
+        </section>
+
+    </main>
+
+    
+</body>
