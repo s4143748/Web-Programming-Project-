@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SGS-G3 - Home</title>
+<link rel="stylesheet" href="styleminh.css">
+</head>
+
+<body>
+    <header class="nav">
+        <a class="brand" href="homepage.html">SGS-G3</a>
+        <nav class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart&amp;checkout.html" class="active">Cart</a>
+        </nav>
+
+        <input class="nav-search" type="search" placeholder="Search">
+        <a class="avatar" href="profile.html" title="Profile"></a>
+    </header>
+
+    <main class="page">
+
+        <div class="row-head">
+            <h1>Cart & Checkout</h1>
+        </div>
+
+        <div class="stack grow">
+
+            <div class="card row">
+                <div class="ph">poster</div>
+                <div class="stack grow">
+                    <strong>Dune Part Two</strong>
+                    <span class="muted"> Buy - 4K</span>
+                    <div class="row">
+                        <select class="input"><option>4K</option><option>HD</option></select>
+                        <select class="input"><option>Buy</option><option>Rent</option></select>
+                    </div>
+                </div>
+
+                <span class="item-price">$xx</span>
+                <a class="btn small secondary" href="#">Remove</a>
+            </div>
+
+            <div class="card row">
+                <div class="ph">poster</div>
+                <div class="stack grow">
+                    <strong>Minions</strong>
+                    <span class="muted"> Rent - HD</span>
+                    <div class="row">
+                        <select class="input"><option>HD</option><option>4K</option></select>
+                        <select class="input"><option>Rent</option><option>Buy</option></select>
+                    </div>
+                </div>
+
+                <span class="item-price">$xx</span>
+                <a class="btn small secondary" href="#">Remove</a>
+            </div>
+
+            <form class="card stack" action="#">
+                <h2 class="section-title">Payment information</h2>
+                <div class="grid2">
+                    <div class="field">
+                        <label for="fullname">Full name</label>
+                        <input class="input" type="text" id="fullname" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input class="input" type="email" id="email" required>
+                    </div>
+                </div>
+
+                <div class="row align-end">
+                    <div class="field grow">
+                        <label for="card">Card number</label>
+                        <input class="input" type="text" id="card" placeholder="**** **** **** ****">
+                    </div>
+
+                    <div class="field field-expiry">
+                        <label for="expiry">Expiry</label>
+                        <input class="input" type="text" id="expiry" placeholder="MM/YY">
+                    </div>
+
+                    <div class="field field-cvc">
+                        <label for="cvc">CVC</label>
+                        <input class="input" type="text" id="cvc" placeholder="***">
+                    </div>
+                </div>
+            </form>
+
+            <div class="card stack">
+                <h2 class="section-title">Summary</h2>
+                <div class="row-head"><strong>Total</strong><strong>$xx</strong></div>
+                <button class="btn" type="submit">Checkout</button>
+            </div>
+        </div>
+    </main>
+</body>
