@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SGS-G3 - Reviews</title>
+<link rel="stylesheet" href="styleminh.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+    <header class="nav">
+        <a class="brand" href="homepage.html">SGS-G3</a>
+        <nav class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="reviews.html" class="active">Reviews</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart&checkout.html">Cart</a>
+        </nav>
+
+        <input class="nav-search" type="search" placeholder="Search">
+        <a class="avatar" href="profile.html" title="Profile"></a>
+    </header>
+
+    <main class="page">
+        <div class="reviews-head">
+            <h1 class="page-title">Reviews</h1>
+            <div class="reviews-actions">
+                <input class="reviews-search" type="search" placeholder="Search reviews">
+                <select class="btn">
+                    <option>Sort: Top rated</option>
+                    <option>Sort: Newest</option>
+                    <option>Sort: Most reviewed</option>
+                </select>
+                <a href="#write" class="btn btn-primary">+ Write review</a>
+            </div>
+        </div>
+
+        <!-- Movie list -->
+        <section class="section">
+            <h2 class="section-title">Top rated movies</h2>
+
+            <article class="movie-card">
+                <div class="poster poster-inception" role="img" aria-label="Inception poster"></div>
+                <div class="movie-body">
+                    <div class="movie-name">Inception</div>
+                    <div class="movie-meta">Sci-Fi / Thriller &middot; 2010 &middot; Christopher Nolan</div>
+                    <div class="review-list">
+                        <div class="review-box">
+                            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p>A heist film folded inside a dream. The rules are dense, but the emotional
+                                core keeps it grounded the whole way through.</p>
+                            <span class="review-author">&mdash; @minh</span>
+                        </div>
+                        <div class="review-box">
+                            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                            <p>Visually stunning, though the first hour leans hard on exposition.
+                                Worth it for the rotating hallway fight alone.</p>
+                            <span class="review-author">&mdash; @lan</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="movie-card">
+                <div class="poster poster-parasite" role="img" aria-label="Parasite poster"></div>
+                <div class="movie-body">
+                    <div class="movie-name">Parasite</div>
+                    <div class="movie-meta">Thriller / Drama &middot; 2019 &middot; Bong Joon-ho</div>
+                    <div class="review-list">
+                        <div class="review-box">
+                            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p>Starts as a con comedy and turns into something far sharper.
+                                The house itself is the best character in the film.</p>
+                            <span class="review-author">&mdash; @khoa</span>
+                        </div>
+                        <div class="review-box">
+                            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p>The tonal shift halfway through caught me completely off guard.
+                                Every award it won was earned.</p>
+                            <span class="review-author">&mdash; @trang</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Review detail -->
+        <section class="card detail-card">
+            <div class="detail-text">
+                <h2>Review detail</h2>
+                <div class="detail-movie">Inception &middot; Sci-Fi / Thriller &middot; 2010</div>
+                <div class="stars" aria-label="Rating 5 out of 5">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+                <p class="detail-body">A heist film folded inside a dream. Nolan spends the first act
+                    teaching you the rules and the rest of the film breaking them, and somehow the
+                    emotional core &mdash; a man trying to get home to his kids &mdash; never gets lost
+                    under all the machinery. The zero-gravity hallway fight is still one of the best
+                    practical set pieces of the decade, and Zimmer's score does half the heavy lifting.
+                    It rewards a second watch.</p>
+                <span class="detail-author">&mdash; @minh</span>
+            </div>
+            <div class="detail-image poster-inception" role="img" aria-label="Inception poster"></div>
+        </section>
+
+        <!-- Write a review -->
+        <section class="card write-card" id="write">
+            <h2>Write a review</h2>
+            <form class="write-form">
+                <label>
+                    <span>Title</span>
+                    <input type="text" placeholder="Give your review a title">
+                </label>
+
+                <label>
+                    <span>Star rating</span>
+                    <select>
+                        <option value="">Select rating</option>
+                        <option>&#9733; 1</option>
+                        <option>&#9733;&#9733; 2</option>
+                        <option>&#9733;&#9733;&#9733; 3</option>
+                        <option>&#9733;&#9733;&#9733;&#9733; 4</option>
+                        <option>&#9733;&#9733;&#9733;&#9733;&#9733; 5</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Description</span>
+                    <textarea rows="5" placeholder="Write your review..."></textarea>
+                </label>
+
+                <div class="write-actions">
+                    <button type="submit" class="btn btn-primary">Publish</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
